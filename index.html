@@ -13,27 +13,18 @@
 
 <body>
     <div class="container">
+
         <form id="tarefas-Form">
             <h2>Inserir nova tarefa</h2>
-            <input type="text"  id="nova-tarefa">
+            <input type="text"  id="nova-tarefa" placeholder="Digite uma nova tarefa">
             <button type="submit">Adicionar</button>
         </form>
-    
-        <ul id="tarefas-list">
-            <!-- onde ficam as tarefas -->
-        </ul>
 
-        <table id="listaTable">
-            <thead>
-                <tr>
-                    <th>Exemplo de tarefa</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Aq onde adc as linhas -->
-            </tbody>
-        </table>
+        <ul id="tarefas-list" class="lista-tarefas">
+            <!-- As tarefas serão adicionadas aqui -->
+        </ul>        
     </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
 </body>
