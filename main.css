@@ -1,7 +1,59 @@
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5ce202c, #00d9ff27);
+}
+
+.container {
+    background-color: rgba(233, 233, 233, 0.479);
+    backdrop-filter: blur(10px) saturate(120%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+
+form {
+    padding: 24px 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lista-tarefas {
+    list-style-type: none; 
+}
+
+.lista-tarefas li::before {
+    content: "\2022"; 
+    margin-right: 5px; 
+    color: #ff4500; 
+}
+
+.tarefa.riscada {
+    text-decoration: line-through;
+}
+
+#tarefas-list {
+    padding: 0; 
+}
+
+.tarefa {
+    display: block;
+    margin-bottom: 10px;
+}
